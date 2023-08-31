@@ -22,11 +22,12 @@
     <title>Vue To Do List</title>
 </head>
 <body>
+    <!--TO DO LIST-->
     <div class="container" id="app">
         <h1>To do list:</h1>
         <ul class="list-group">
-            <li class="list-group-item" v-for="(item,index) in toDo">
-                {{ toDo[index].title }}
+            <li class="list-group-item" v-for="(item,index) in toDo" v-bind:class="{'text-done': item.done}">
+                {{ toDo[index].title }} 
             </li>
           </ul>
     </div>

@@ -40,6 +40,6 @@ createApp({
     return {
         toDo,
     }
-  }
+  },   
 }).mount('#app')
 
