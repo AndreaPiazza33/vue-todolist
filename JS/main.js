@@ -30,13 +30,16 @@ const toDo = [
     },
 ]
 
+
+
 //VUE
 const { createApp } = Vue;
 
 createApp({
   data() {
     return {
-        toDo
+        toDo,
     }
   }
 }).mount('#app')
+
